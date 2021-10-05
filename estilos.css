@@ -1,0 +1,29 @@
+/* Esto va a ser solo una prueba de estilo para ver como va quedando */
+
+*{
+    margin: 0;
+}
+
+header{
+    background-color: #58d374;
+    height: 20vh;
+}
+
+main{
+    background-color: rgb(57, 49, 177);
+    height: 80vh;
+}
+
+aside{
+    background-color: azure;
+    width: 8vw;
+    height: 40vh;
+    position: absolute;
+    top: 40vh;
+    left: 90.05vw;
+}
+
+footer{
+    background-color: #ff8a8a;
+    height: 20vh;
+}

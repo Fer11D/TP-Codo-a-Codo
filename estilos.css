@@ -1,4 +1,4 @@
-/* Esto va a ser solo una prueba de estilo para ver como va quedando */
+/* Esta página es mobile-first, y luego se adapta a resoluciones mayores*/
 
 *{
     margin: 0;
@@ -14,16 +14,46 @@ main{
     height: 80vh;
 }
 
-aside{
-    background-color: azure;
-    width: 8vw;
-    height: 40vh;
-    position: absolute;
-    top: 40vh;
-    right: 0;
-}
-
 footer{
     background-color: #ff8a8a;
     height: 20vh;
+}
+
+footer li{
+    list-style: none;
+    display: inline-block;
+    height: 10vh;
+    width: 15vw;
+    border: dashed 1px black;
+    /* luego borrar este borde */
+    position: relative;
+    left: 7vw;
+    top: 3vh;
+}
+
+footer p{
+    position: relative;
+    top: 1.5vh;
+    text-align: center;
+    border: black 1px solid;
+}
+
+footer a{
+/* cambiar los logos que se usaron con fontawesome por imágenes de las redes sociales, quedaría mejor */
+}
+
+
+
+
+
+
+
+
+
+
+/* Adaptar las dimenciones de este punto de corte, porque el 1080 se colocó solo como prueba */
+@media screen and (min-width: 361px) and (max-width: 1080px) {
+    header{
+        background-color: black;
+    }
 }

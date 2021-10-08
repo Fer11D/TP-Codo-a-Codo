@@ -2,11 +2,30 @@
 
 *{
     margin: 0;
+    padding: 0;
+    color: #27262c;
 }
 
 header{
     background-color: #58d374;
-    height: 20vh;
+    height: 25vh;
+}
+
+header li{
+    list-style: none;
+}
+
+/* Falta ajustar el texto de los botones al centro verticalmente */
+header a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    display: block;
+    margin: .5vh;
+    height: 7vh;
+    position: relative;
+    bottom: 1.8vh;
+    border: 1px black dashed;
 }
 
 main{
@@ -17,34 +36,34 @@ main{
 footer{
     background-color: #ff8a8a;
     height: 20vh;
+    color: #27262c;
 }
 
-footer p{
+footer ul{
+    width: 55vw;
     position: relative;
-    top: 1.5vh;
-    text-align: center;
-    border: black 1px solid;
+    left: 22.22vw;
+    bottom: 3vh;
 }
 
 footer li{
     list-style: none;
     display: inline-block;
-    height: 15vw;
-    width: 15vw;
-    border: dashed 1px black;
-    /* luego borrar este borde */
-    position: relative;
-    left: 7vw;
-    top: 3vh;
+    font-size: 3rem;
+    text-align: center;
 }
 
 footer a{
-/* cambiar los logos que se usaron con fontawesome por imágenes de las redes sociales, quedaría mejor */
+    text-decoration: none;
+    color: #27262c;
+    /* color: #f4eeff; */
 }
 
-
-
-
+footer p{
+    position: relative;
+    top: 13.5vh;
+    text-align: center;
+}
 
 
 
@@ -52,7 +71,7 @@ footer a{
 
 
 /* Adaptar las dimenciones de este punto de corte, porque el 1080 se colocó solo como prueba */
-@media screen and (min-width: 361px) and (max-width: 1080px) {
+@media screen and (min-width: 361px) and (max-width: 801px) {
     header{
         background-color: black;
     }

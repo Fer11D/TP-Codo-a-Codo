@@ -19,23 +19,23 @@ footer{
     height: 20vh;
 }
 
+footer p{
+    position: relative;
+    top: 1.5vh;
+    text-align: center;
+    border: black 1px solid;
+}
+
 footer li{
     list-style: none;
     display: inline-block;
-    height: 10vh;
+    height: 15vw;
     width: 15vw;
     border: dashed 1px black;
     /* luego borrar este borde */
     position: relative;
     left: 7vw;
     top: 3vh;
-}
-
-footer p{
-    position: relative;
-    top: 1.5vh;
-    text-align: center;
-    border: black 1px solid;
 }
 
 footer a{

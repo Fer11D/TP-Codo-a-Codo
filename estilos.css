@@ -29,7 +29,6 @@ header img{
 }
 
 nav{
-    border: dotted 1px black;
     border-radius: 5px;
     width: 95vw;
     height: 14vh;
@@ -64,20 +63,22 @@ main{
 /* main para pagina "index" */
 .cambiar1{
     color: #ec7ac0;
+    text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
 }
 
 .cambiar1:after{
     content:"";
-    animation: entenderAcrear 3s linear infinite;
+    animation: entenderAcrear 5s linear infinite;
 }
 
 .cambiar2{
     color: #7ae7ec;
+    text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
 }
 
 .cambiar2:after{
     content:"";
-    animation: presenteAfuturo 3s linear infinite;
+    animation: presenteAfuturo 5s linear infinite;
 }
 
 .principal{
@@ -123,7 +124,7 @@ footer{
     background: linear-gradient(135deg,#7ae7ec,#ef99fe);
     border-radius: 10px;
     height: 20vh;
-    width: 99vw;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -146,6 +147,7 @@ footer a{
     text-align: center;
 }
 
+/* Animaciones */
 @keyframes entenderAcrear {
     0%{ 
         content:"entender";

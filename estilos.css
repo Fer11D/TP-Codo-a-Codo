@@ -4,75 +4,86 @@
     margin: 0;
     padding: 0;
     color: #27262c;
+    /* color: #f4eeff; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 header{
     background-color: #58d374;
     height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-header li{
+header img{
+    max-height: 8.43vh;
+    max-width: 15vw;
+}
+
+nav{
+    border: dotted 1px black;
+    width: 95vw;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav li{
     list-style: none;
 }
 
-/* Falta ajustar el texto de los botones al centro verticalmente */
-header a{
+nav a{
     text-decoration: none;
-    text-align: center;
-    font-weight: bolder;
     display: block;
-    margin: .5vh;
-    height: 7vh;
-    position: relative;
-    bottom: 1.8vh;
-    border: 1px black dashed;
+    height: 4.2vh;
+    font-weight: bolder;
+    text-align: center;
 }
 
 main{
     background-color: rgb(57, 49, 177);
-    height: 80vh;
+    min-height: 80vh;
 }
 
 footer{
     background-color: #ff8a8a;
     height: 20vh;
-    color: #27262c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 footer ul{
-    width: 55vw;
-    position: relative;
-    left: 22.22vw;
-    bottom: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 95vw;
 }
 
 footer li{
     list-style: none;
-    display: inline-block;
-    font-size: 3rem;
-    text-align: center;
 }
 
 footer a{
     text-decoration: none;
-    color: #27262c;
-    /* color: #f4eeff; */
-}
-
-footer p{
-    position: relative;
-    top: 13.5vh;
+    font-size: 2.5rem;
     text-align: center;
+    display: inline-block;
+    width: 20vw;
 }
-
-
-
 
 
 
 /* Adaptar las dimenciones de este punto de corte, porque el 1080 se colocó solo como prueba */
-@media screen and (min-width: 361px) and (max-width: 801px) {
+/* @media screen and (min-width: 361px) and (max-width: 801px) {
     header{
         background-color: black;
     }
-}
+} */

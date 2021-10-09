@@ -1,20 +1,21 @@
-/* Esta página es mobile-first (Moto G4), y luego se adapta a resoluciones mayores*/
+/* Esta página es mobile-first 360w x 640h (Moto G4), y luego se adapta a resoluciones mayores*/
 
 /* Configuraciones generales */
 *{
     margin: 0;
     padding: 0;
-    color: #27262c;
-    /* color: #f4eeff; */
+    color: #333;
+    font-family: Nunito, sans-serif;
+    font-size: 1.1rem;
 }
 
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 header{
-    background-color: #58d374;
     height: 25vh;
     display: flex;
     flex-direction: column;
@@ -29,11 +30,13 @@ header img{
 
 nav{
     border: dotted 1px black;
+    border-radius: 5px;
     width: 95vw;
     height: 14vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: linear-gradient(135deg,#7ae7ec,#ef99fe);
 }
 
 nav li{
@@ -49,7 +52,6 @@ nav a{
 }
 
 main{
-    background-color: rgb(57, 49, 177);
     min-height: 110vh;
     max-width: 100vw;
     display: flex;
@@ -59,25 +61,47 @@ main{
     text-align: center;
 }
 
+/* main para pagina "index" */
+.cambiar1{
+    color: #ec7ac0;
+}
+
+.cambiar1:after{
+    content:"";
+    animation: entenderAcrear 3s linear infinite;
+}
+
+.cambiar2{
+    color: #7ae7ec;
+}
+
+.cambiar2:after{
+    content:"";
+    animation: presenteAfuturo 3s linear infinite;
+}
+
 .principal{
     max-width: 80vw;
     max-height: 45vh;
     object-fit: cover;
-    border: 1px green dashed;
 }
 
 .portada{
     width: 80vw;
     height: 45vh;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 section{
-    background-color: #ffffff;
     max-width: 90vw;
     min-height: 10vh;
     border: 1px black dashed;
+    border-radius: 10px;
+    margin: 1vh;
 }
+
+/* main para pagina "about" */
 
 .titulo_presentacion{
     text-align: center;
@@ -89,9 +113,17 @@ section{
     text-decoration: underline;
 }
 
+/* main para pagina "formulas" */
+
+iframe{
+    max-width: 90vw;
+}
+
 footer{
-    background-color: #ff8a8a;
+    background: linear-gradient(135deg,#7ae7ec,#ef99fe);
+    border-radius: 10px;
     height: 20vh;
+    width: 99vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -112,14 +144,25 @@ footer a{
     text-decoration: none;
     font-size: 2.5rem;
     text-align: center;
-    display: inline-block;
-    width: 20vw;
 }
 
-/* Página About*/
+@keyframes entenderAcrear {
+    0%{ 
+        content:"entender";
+    }
+    90%{
+        content:"crear";
+    }
+}
 
-
-
+@keyframes presenteAfuturo {
+    0%{
+        content:"presente";
+    }
+    90%{
+        content:"futuro";
+    }
+}
 
 /* Adaptar las dimenciones de este punto de corte, porque el 1080 se colocó solo como prueba */
 /* @media screen and (min-width: 361px) and (max-width: 801px) {

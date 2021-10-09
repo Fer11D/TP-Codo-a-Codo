@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilos.css">
-        <script src="https://kit.fontawesome.com/e1dd116177.js" crossorigin="anonymous"></script>
-        <title>Estadística</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagenes/logopestana.png">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/e1dd116177.js" crossorigin="anonymous"></script>
+    <title>Estadística</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="Imagenes/logoprueba.png" alt="logo"></a>
+        <a href="index.html"><img src="Imagenes/logopagina.png" alt="logo"></a>
         <nav>
             <ul>
                 <li>
@@ -26,73 +27,62 @@
         </nav>
     </header>
     <main>
-        <!-- Ingresar todos los datos de Fernando Rodriguez, esta parte debería ser como un CV para que las personas me contacten -->
-
-
-        <!-- Mejorar el formulario, debe quedar lindo -->
-        <form action="extras.js">
-            <p>
-                Las devoluciones son el motor del progreso.
-                Si tenés alguna recomendación o consulta sobre esta página, enviame tu mensaje usando el siguiente formulario. 
+        <section class="presentacion">
+            <p class="titulo_presentacion">Un poco sobre mi</p>
+            <p class="texto_presentacion">Mi nombre es Fernando Rodriguez, soy Abogado recibido de la Universidad de Buenos Aires (UBA) en el año 2021. <br>
+                Comencé mi carrera como programador ese mismo año, con la intención de combinar mis dos grandes pasiones, la programación y las matemáticas. <br>
+                Esta página comenzó como un pequeño trabajo obligatorio para poder continuar mis estudios, pero desde el inicio se ideó como una herramienta para los estudiantes, quienes me habían expresado la dificultad que tienen por comprender las matemáticas, más específicamente la estadística. <br>
+                Espero te haya sido útil este sitio, y me dejes un comentario sobre qué debería mejorar para que esta página sea mejor y fácil de utilizar.
             </p>
-            <label for=""> Nombre: 
-                <input type="text" name="nombre" placeholder="Ingresá tu nombre.">
-            </label>
+            <!-- Ingresar todos los datos de Fernando Rodriguez, esta parte debería ser como un CV para que las personas me contacten -->
+        </section>
+        
+        <section>
+        <!-- Mejorar el formulario, debe quedar lindo -->
+            <p class="titulo_formulario">Ayudanos a mejorar</p>
+            <form action="extras.js">
+                <p>
+                    Las devoluciones (feedbacks) son el motor del progreso.
+                    Si tenés alguna recomendación o consulta sobre esta página, enviame tu mensaje usando el siguiente formulario. 
+                </p>
+                <label for=""> Nombre: 
+                    <input type="text" name="nombre" placeholder="Ingresá tu nombre.">
+                </label>
 
-            <label for=""> Email:
-                <input type="email" name="email" placeholder="Ingresá tu dirección de email.">
-            </label>
-            
-            <label for=""> Dejanos tu comentario:
-                <input type="textarea" name="comentario" placeholder="Expresate libremente.">
-            </label>
-            
-            <label for="calidad">Calificá tu experiencia de usuario
-                <select name="calidad" id="calidad" size="10">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5" selected>5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-            </label>
-            
-            <label for="">¿Querés ricibir notificaciones cuando subamos contenido nuevo?
-                <input type="checkbox">
-            </label>
+                <label for=""> Email:
+                    <input type="email" name="email" placeholder="Ingresá tu dirección de email.">
+                </label>
+                
+                <label for=""> Dejanos tu comentario:
+                    <input type="textarea" name="comentario" placeholder="Expresate libremente.">
+                </label>
+                
+                <label for="calidad">Calificá tu experiencia de usuario
+                    <select name="calidad" id="calidad" size="10">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </label>
+                
+                <label for="">¿Querés ricibir notificaciones cuando subamos contenido nuevo?
+                    <input type="checkbox">
+                </label>
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Reset">
-
-        </form>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
     </main>
-    <aside>
-        <ul>
-            <!-- Acá van los links a las redes sociales -->
-            <li>
-                <a href=""></a>
-            </li>
-            <li>
-                <a href=""></a>
-            </li>
-            <li>
-                <a href=""></a>
-            </li>
-            <li>
-                <a href=""></a>
-            </li>
-            <li>
-                <a href=""></a>
-            </li>
-        </ul>
-    </aside>
+
     <footer>
-        <!-- Acá agregar íconos con corazones y esas cosas, acá podemos usar Font Awesome -->
         <!-- El color del corazón debería ser rojo -->
         <ul>
             <!-- Acá van los links a las redes sociales -->

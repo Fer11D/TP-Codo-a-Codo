@@ -30,14 +30,45 @@
 
 
         <!-- Mejorar el formulario, debe quedar lindo -->
-        <form action="">
+        <form action="extras.js">
             <p>
                 Las devoluciones son el motor del progreso.
-                Si tenés alguna recomendación o consulta, enviame tu mensaje usando el siguiente formulario. 
+                Si tenés alguna recomendación o consulta sobre esta página, enviame tu mensaje usando el siguiente formulario. 
             </p>
-            <input type="text" placeholder="Ingresá tu nombre.">
-            <input type="email" placeholder="Ingresá tu dirección de email.">
-            <input type="text" placeholder="Expresate libremente, con respeto por favor.">
+            <label for=""> Nombre: 
+                <input type="text" name="nombre" placeholder="Ingresá tu nombre.">
+            </label>
+
+            <label for=""> Email:
+                <input type="email" name="email" placeholder="Ingresá tu dirección de email.">
+            </label>
+            
+            <label for=""> Dejanos tu comentario:
+                <input type="textarea" name="comentario" placeholder="Expresate libremente.">
+            </label>
+            
+            <label for="calidad">Calificá tu experiencia de usuario
+                <select name="calidad" id="calidad" size="10">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </label>
+            
+            <label for="">¿Querés ricibir notificaciones cuando subamos contenido nuevo?
+                <input type="checkbox">
+            </label>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+
         </form>
     </main>
     <aside>

@@ -1,5 +1,6 @@
 /* Esta página es mobile-first (Moto G4), y luego se adapta a resoluciones mayores*/
 
+/* Configuraciones generales */
 *{
     margin: 0;
     padding: 0;
@@ -78,6 +79,9 @@ footer a{
     display: inline-block;
     width: 20vw;
 }
+
+/* Página About*/
+
 
 
 

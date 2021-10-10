@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilos.css">
-        <script src="https://kit.fontawesome.com/e1dd116177.js" crossorigin="anonymous"></script>
-        <title>Estadística</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagenes/logopestana.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/e1dd116177.js" crossorigin="anonymous"></script>
+    <title>Estadística</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="Imagenes/logoprueba.png" alt="logo"></a>
+        <a href="index.html"><img src="Imagenes/logopagina.png" alt="logo"></a>
         <nav>
             <ul>
                 <li>
@@ -26,27 +30,88 @@
         </nav>
     </header>
     <main>
+        <h1>REGRESIÓN LINEAL</h1>
+        <div>
+            <h3>Primero, un video para entender qué es la regresión lineal</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SsFBnvkoZa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+            
+        <p>Ahora si, comencemos con los pasos para realizar la regresión lineal.</p>
+       
+        <div class="pasos">
+            <h4>Paso 1</h4>
+            <img src="Imagenes/formulas/3basicas.jpeg" alt="Estadística">
+            <p>Armamos una tabla con todas las muestras, los valores de la variable X y los valores de la variable Y. Al final de estas columnas, colocaremos una celda con la sumatoria de todos los valores que escribimos. <br>
+            n será cada muestra obtenida. <br>
+            X será la variable independiente, o también llamada explicativa. <br>
+            Y será la variable dependiente, o también conocida como explicada. <br>
+            Así, hemos obtenido una tabla de 3 columnas.</p>
+        </div>
+
+        <div class="pasos">
+            <h4>Paso 2</h4>
+            <img src="Imagenes/formulas/5totales.jpg" alt="matemática">
+            <p>A nuestra tabla le agregamos otras columnas a la derecha, cuyas sumatorias nos retornarán los "5 totales". <br>
+            En la primera columna nueva, colocaremos el producto de XY (es decir, multiplicamos el valor de X y el de Y). <br>
+            Al final de esta columna, haremos la sumatoria de todos los resultados obtenidos. <br>
+            En la segunda columna nueva, colocaremos la potencia de X (es decir, elevamos X al cuadrado). <br> 
+            Al final de esta columna, haremos la sumatoria de todos los resultados obtenidos. <br>
+            En la tercera columna nueva, colocaremos la potencia de Y (es decir, elevamos Y al cuadrado). <br>
+            Al final de esta columna, haremos la sumatoria de todos los resultados obtenidos. </p>
+        </div>
+        
+        <div class="pasos">
+            <h4>Paso 3</h4>
+            <img src="Imagenes/formulas/X e Y raya.jpg" alt="regresión">
+            <p>Calculamos los promedios de X y de Y. <br>
+            Para calcular el promedio de X, usaremos la fórmula 1. <br>
+            Para calcular el promedio de Y, usaremos la fórmula 2. </p>
+        </div>
+
+        <div class="pasos">
+            <h4>Paso 4</h4>
+            <img src="Imagenes/formulas/SumaCuadrados.jpg" alt="fórmulas">
+            <p>Calculamos las 3 sumas.<br>
+            La Suma de Cuadrados de X (SCx) se calcula con la fórmula 1. <br>
+            La Suma de Cuadrados de Y (SCy) se calcula con la fórmula 2. <br>
+            La Suma de Productos de XY (SPxy) se calcula con la fórmula 3. </p>
+        </div>
+
+        <div class="pasos">
+            <h4>Paso 5</h4>
+            <img src="Imagenes/formulas/Bs.jpg" alt="calcular">
+            <p>Calculamos los parámetros de la recta de regresión.<br>
+            La Pendiente de la Recta (b1) se calcula con la fórmula 1.<br>
+            La Ordenada al Origen (b0) se calcula con la fórmula 2.</p>
+        </div>
+
+        <div class="pasos">
+            <h4>Fin</h4>
+            <img src="Imagenes/formulas/Regresion.jpg" alt="lineal">
+            <p>Ya tenemos los valores que integran nuestra recta de regresión.<br>
+            Ahora tocaría colocar diferentes valores en X para comenzar a dibujar la recta.</p>
+        </div>
 
     </main>
     <footer>
-        <!-- Acá agregar íconos con corazones y esas cosas, acá podemos usar Font Awesome -->
-        <!-- El color del corazón debería ser rojo -->
         <ul>
             <li>
-                <a class="fab fa-facebook" href="http://www.facebook.com" target="BLANK_"></a>
+                <a class="fab fa-facebook" href="http://www.facebook.com/Fer11D" target="BLANK_"></a>
             </li>
             <li>
-                <a class="fab fa-twitter" href="http://www.twitter.com" target="BLANK_"></a>
+                <a class="fab fa-github" href="https://github.com/Fer11D" target="BLANK_"></a>
             </li>
             <li>
-                <a class="fab fa-linkedin" href="http://www.linkedin.com" target="BLANK_"></a>
+                <a class="fab fa-twitter" href="http://www.twitter.com/Fer11D" target="BLANK_"></a>
             </li>
             <li>
-                <a class="fab fa-instagram" href="http://www.instagram.com" target="BLANK_"></a>
+                <a class="fab fa-linkedin" href="http://www.linkedin.com/in/Fer11D" target="BLANK_"></a>
+            </li>
+            <li>
+                <a class="fab fa-instagram" href="http://www.instagram.com/Fer11D" target="BLANK_"></a>
             </li>
         </ul>
-        <p>Hecho con mucho amor <span class="fas fa-heart"></span> y un poco de código <span class="fas fa-laptop-code"></span>.</p>
-        <p>By Fernando Rodríguez <span class="fas fa-user"></span></p>
+        <p><span class="fas fa-user"></span> By Fernando Rodríguez</p>
     </footer>
 </body>
 </html>

@@ -1,19 +1,21 @@
-/* Esta página es mobile-first (Moto G4), y luego se adapta a resoluciones mayores*/
+/* Esta página es mobile-first 360w x 640h (Moto G4), y luego se adapta a resoluciones mayores*/
 
+/* Configuraciones generales */
 *{
     margin: 0;
     padding: 0;
-    color: #27262c;
-    /* color: #f4eeff; */
+    color: #333;
+    font-family: Nunito, sans-serif;
+    font-size: 1.1rem;
 }
 
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 header{
-    background-color: #58d374;
     height: 25vh;
     display: flex;
     flex-direction: column;
@@ -27,12 +29,13 @@ header img{
 }
 
 nav{
-    border: dotted 1px black;
+    border-radius: 5px;
     width: 95vw;
     height: 14vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: linear-gradient(135deg,#7ae7ec,#ef99fe);
 }
 
 nav li{
@@ -48,13 +51,128 @@ nav a{
 }
 
 main{
-    background-color: rgb(57, 49, 177);
-    min-height: 80vh;
+    min-height: 110vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+a:hover{
+    color: #0299cf;
+    text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
+}
+
+/* main para pagina "index" */
+
+.cambiar1, .cambiar2{
+    display: inline-block;
+    width: 22.5vw;
+}
+
+.cambiar1:after{
+    content:"";
+    animation: analizarAcrear 7s linear infinite;
+}
+
+.cambiar2:after{
+    content:"";
+    animation: pasadoAfuturo 7s linear infinite;
+}
+
+.principal{
+    max-width: 80vw;
+    max-height: 45vh;
+    object-fit: cover;
+}
+
+.portada{
+    width: 80vw;
+    height: 45vh;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.linkEnTexto{
+    text-decoration: none;
+    font-weight: 900;
+}
+
+/* main para pagina "about" */
+section{
+    max-width: 90vw;
+    min-height: 10vh;
+    border: 1px #000 dashed;
+    border-radius: 10px;
+    margin: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.titulo_presentacion, .titulo_formulario{
+    text-decoration: underline;
+}
+
+form{
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.comentario{
+    height: 45vh;
+}
+
+textarea{
+    resize: none;
+    width: 80vw;
+    height: 40vh;
+}
+
+.botones{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 1vw;
+}
+
+.enviar, .resetear{
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #0d6efd;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+/* main para pagina "formulas" */
+
+iframe{
+    max-width: 90vw;
+}
+
+.pasos{
+    margin: 1vh 0;
+    border: dashed 1px #000;
+    border-radius: 5px;
+    width: 95vw;
+}
+
+.pasos > img{
+    max-width: 90vw;
+    max-height: 50vh;
 }
 
 footer{
-    background-color: #ff8a8a;
+    background: linear-gradient(135deg,#7ae7ec,#ef99fe);
+    border-radius: 10px;
     height: 20vh;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -75,15 +193,94 @@ footer a{
     text-decoration: none;
     font-size: 2.5rem;
     text-align: center;
-    display: inline-block;
-    width: 20vw;
 }
 
+/* Animaciones */
+@keyframes analizarAcrear {
+    0%{ 
+        content:"analizar";
+        color: #ec7ac0;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
+    }
 
+    17%{
+        color: #ffffff;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+    }
+
+    33%{
+        content:"entender";
+        color: #ec7ac0;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
+    }
+
+    51%{
+        color: #ffffff;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+    }
+
+    67%{
+        content:"crear";
+        color: #ec7ac0;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111
+    }
+
+    84%{
+        color: #ffffff;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+    }
+
+    100%{ 
+        content:"analizar";
+        color: #ec7ac0;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
+    }
+}
+
+@keyframes pasadoAfuturo {
+    0%{
+        content:"pasado";
+        color: #7ae7ec;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;    
+    }
+
+    17%{
+        color: #ffffff;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+    }
+
+    33%{
+        content:"presente";
+        color: #7ae7ec;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;    
+    }
+
+    51%{
+        color: #ffffff;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+    }
+
+    67%{
+        content:"futuro";
+        color: #7ae7ec;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;    
+    }
+
+    84%{
+        color: #ffffff;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+    }
+    
+    100%{
+        content:"pasado";
+        color: #7ae7ec;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;    
+    }
+}
 
 /* Adaptar las dimenciones de este punto de corte, porque el 1080 se colocó solo como prueba */
 /* @media screen and (min-width: 361px) and (max-width: 801px) {
     header{
-        background-color: black;
+        background-color: 000;
     }
 } */

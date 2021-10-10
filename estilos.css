@@ -60,25 +60,20 @@ main{
     text-align: center;
 }
 
-/* main para pagina "index" */
-.cambiar1{
-    color: #ec7ac0;
+a:hover{
+    color: #0299cf;
     text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
 }
 
+/* main para pagina "index" */
 .cambiar1:after{
     content:"";
-    animation: entenderAcrear 5s linear infinite;
-}
-
-.cambiar2{
-    color: #7ae7ec;
-    text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
+    animation: entenderAcrear 7s linear infinite;
 }
 
 .cambiar2:after{
     content:"";
-    animation: presenteAfuturo 5s linear infinite;
+    animation: presenteAfuturo 7s linear infinite;
 }
 
 .principal{
@@ -94,6 +89,12 @@ main{
     border-radius: 15px;
 }
 
+.linkEnTexto{
+    text-decoration: none;
+    font-weight: 900;
+}
+
+/* main para pagina "about" */
 section{
     max-width: 90vw;
     min-height: 10vh;
@@ -101,8 +102,6 @@ section{
     border-radius: 10px;
     margin: 1vh;
 }
-
-/* main para pagina "about" */
 
 .titulo_presentacion{
     text-align: center;
@@ -151,18 +150,60 @@ footer a{
 @keyframes entenderAcrear {
     0%{ 
         content:"entender";
+        color: #ec7ac0;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
     }
-    90%{
+
+    25%{
+        color: #ffffff;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+    }
+
+    50%{
         content:"crear";
+        color: #ec7ac0;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
+    }
+
+    75%{
+        color: #ffffff;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+    }
+
+    100%{
+        content:"entender";
+        color: #ec7ac0;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111
     }
 }
 
 @keyframes presenteAfuturo {
     0%{
         content:"presente";
+        color: #7ae7ec;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;    
     }
-    90%{
+
+    25%{
+        color: #ffffff;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+    }
+
+    50%{
         content:"futuro";
+        color: #7ae7ec;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;    
+    }
+
+    75%{
+        color: #ffffff;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+    }
+
+    100%{
+        content:"presente";
+        color: #7ae7ec;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;    
     }
 }
 

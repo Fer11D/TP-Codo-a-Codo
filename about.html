@@ -35,56 +35,58 @@
             <p class="texto_presentacion">Mi nombre es Fernando Rodriguez, soy Abogado recibido de la Universidad de Buenos Aires (UBA) en el año 2021. <br>
                 Comencé mi carrera como programador ese mismo año, con la intención de combinar mis dos grandes pasiones, la programación y las matemáticas. <br>
                 Esta página comenzó como un pequeño trabajo obligatorio para poder continuar mis estudios, pero desde el inicio se ideó como una herramienta para los estudiantes, quienes me habían expresado la dificultad que tienen por comprender las matemáticas, más específicamente la estadística. <br>
-                Espero te haya sido útil este sitio, y me dejes un comentario sobre qué debería mejorar para que esta página sea mejor y fácil de utilizar.
+                En la parte inferior encontrarás todas las maneras por las cuales podrás contactarme. <br> 
+                Espero que este sitio te sea útil, y me dejes un comentario sobre qué se debería mejorar en el sitio. <br>
             </p>
-            <!-- Ingresar todos los datos de Fernando Rodriguez, esta parte debería ser como un CV para que las personas me contacten -->
         </section>
         
         <section>
         <!-- Mejorar el formulario, debe quedar lindo -->
-            <p class="titulo_formulario">Ayudanos a mejorar</p>
-            <form action="extras.js">
+            <div>
+                <p class="titulo_formulario">Ayudanos a mejorar</p>
                 <p>
-                    Las devoluciones (feedbacks) son el motor del progreso.
+                    Las devoluciones (feedbacks) son el motor del progreso. <br>
                     Si tenés alguna recomendación o consulta sobre esta página, enviame tu mensaje usando el siguiente formulario. 
                 </p>
-                <label for=""> Nombre: 
-                    <input type="text" name="nombre" placeholder="Ingresá tu nombre.">
+            </div>
+            <form method="post" action="formulario.js">
+                <label for="nombre"> Nombre: 
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre." required>
                 </label>
 
-                <label for=""> Email:
-                    <input type="email" name="email" placeholder="Ingresá tu dirección de email.">
+                <label for="email"> Email:
+                    <input type="email" name="email" id="email" placeholder="Ingresá tu dirección de email." required>
                 </label>
                 
-                <label for=""> Dejanos tu comentario:
-                    <input type="textarea" name="comentario" placeholder="Expresate libremente.">
+                <label class="comentario" for="comentario"> Dejanos tu comentario:
+                    <textarea name="comentario" id="comentario" placeholder="Expresate libremente..." required></textarea>
                 </label>
                 
                 <label for="calidad">Calificá tu experiencia de usuario
-                    <select name="calidad" id="calidad" size="10">
+                    <select name="calidad" id="calidad">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
-                        <option value="5" selected>5</option>
+                        <option value="5">5</option>
                         <option value="6">6</option>
-                        <option value="7">7</option>
+                        <option value="7" selected>7</option>
                         <option value="8">8</option>
                         <option value="9">9</option>
                         <option value="10">10</option>
                     </select>
                 </label>
                 
-                <label for="">¿Querés ricibir notificaciones cuando subamos contenido nuevo?
-                    <input type="checkbox">
+                <label for="notificaciones">¿Querés ricibir notificaciones cuando subamos contenido nuevo?
+                    <input name="notificaciones" id="notificaciones" type="checkbox">
                 </label>
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Reset">
+                <div class="botones">
+                    <input class="resetear" type="reset" value="Borrar">
+                    <input class="enviar" type="submit" value="Enviar">
+                </div>
             </form>
         </section>
     </main>
-
     <footer>
         <ul>
             <li>
@@ -105,5 +107,6 @@
         </ul>
         <p><span class="fas fa-user"></span> By Fernando Rodríguez</p>
     </footer>
+    <script src="formulario.js"></script>
 </body>
 </html>

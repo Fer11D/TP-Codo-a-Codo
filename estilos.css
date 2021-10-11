@@ -72,6 +72,10 @@ a:hover{
     text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
 }
 
+.fa-user{
+    animation: persona 3.5s infinite backwards;
+}
+
 /* main para pagina "index" */
 
 .cambiar1, .cambiar2{
@@ -288,6 +292,21 @@ footer a{
     }
 }
 
+@keyframes persona {
+    0%{
+        color: #333;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
+    }
+    50%{
+        color: #0299cf;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;    
+    }    
+    100%{
+        color: #333;
+        text-shadow: 1px 0 0 #111, -1px 0 0 #111, 0 1px 0 #111, 0 -1px 0 #111;
+    }
+}
+
 @media screen and (min-width: 600px) and (max-width: 1024px) {
     header{
         height: 13vh;
@@ -318,5 +337,25 @@ footer a{
 }
 
 @media screen and (min-width: 1024px){
+    header{
+        height: 15vh;
+    }
 
+    nav{
+        height: 7vh;
+        flex-direction: row;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .cambiar1, .cambiar2{
+        width: 8vw;
+    }
+
+    footer{
+        height: 10vh;
+    }
 }

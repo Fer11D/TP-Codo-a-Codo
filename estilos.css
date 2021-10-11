@@ -95,12 +95,6 @@ a:hover{
     animation: pasadoAfuturo 7s linear infinite;
 }
 
-.principal{
-    max-width: 95vw;
-    max-height: 45vh;
-    object-fit: cover;
-}
-
 .portada{
     width: 95vw;
     height: 45vh;
@@ -174,7 +168,7 @@ textarea{
 
 /* main para pagina "formulas" */
 h1{
-    margin: 2vh;
+    text-decoration: underline;
 }
 
 iframe{

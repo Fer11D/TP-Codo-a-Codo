@@ -24,6 +24,8 @@ header{
 }
 
 header img{
+    min-height: 67px;
+    min-width: 67px;
     max-height: 8.43vh;
     max-width: 15vw;
 }
@@ -136,16 +138,15 @@ a:hover{
 }
 
 form{
-    height: 115vh;
-    min-height: 90vh;
+    margin: 1rem 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.comentario{
-    height: 45vh;
+form > * {
+    margin: 1rem 0 0;
 }
 
 textarea{

@@ -248,3 +248,30 @@
 // }
 // a();
 
+// 16. Escribir un programa que escriba en pantalla los divisores comunes de dos
+// números dado
+
+// let a = () => {
+//     let primerNumero = parseInt(prompt("Ingresa el primer número."));
+//     let divisoresPrimer = [];
+//     let segundoNumero = parseInt(prompt("Ingresa el segundo número."));
+//     let divisoresSegundo = [];
+//     let comunes = [];
+//     let i = 0;
+//     let i2 = 0;
+//     for (i; i <= primerNumero; i++){
+//         if(primerNumero%i == 0){
+//             divisoresPrimer.push(i);
+//         }
+//     }
+//     for (i2; i2 <= segundoNumero; i2++){
+//         if(segundoNumero%i2 == 0){
+//             divisoresSegundo.push(i2);
+//         }
+//     } 
+//     divisoresPrimer.forEach(divisor => { 
+//         divisoresSegundo.includes(divisor) ? comunes.push(divisor) : "" 
+//     });
+//     return console.log (`Los divisores comunes de ambos números son ${comunes}`);
+// }
+// a();

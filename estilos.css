@@ -32,7 +32,6 @@ header img{
 
 nav{
     border-radius: 5px;
-    border: 1px #333 solid;
     padding: .5rem 0;
     width: 95vw;
     display: flex;
@@ -199,7 +198,6 @@ iframe{
 
 footer{
     background: linear-gradient(135deg,#7ae7ec,#ef99fe);
-    border: 1px solid #333;
     border-radius: 10px;
     padding: .9rem 0;
     width: 95vw;
@@ -328,6 +326,7 @@ footer a{
 @media screen and (min-width: 600px) and (max-width: 1024px) {
     nav{
         flex-direction: row;
+        background: linear-gradient(to right, #2196f3, #f44336);
     }
 
     nav ul{
@@ -343,11 +342,17 @@ footer a{
         width: 14vw;
     }
 
+    footer{
+        background: linear-gradient(to right, #2196f3, #f44336);
+    }
+
+
 }
 
 @media screen and (min-width: 1024px){
     nav{
         flex-direction: row;
+        background: linear-gradient(to right, #30e8bf, #ff8235);
     }
 
     nav ul{
@@ -361,5 +366,9 @@ footer a{
 
     .cambiar1, .cambiar2{
         width: 8vw;
+    }
+
+    footer{
+        background: linear-gradient(to right, #30e8bf, #ff8235);
     }
 }
